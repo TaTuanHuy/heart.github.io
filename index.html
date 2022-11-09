@@ -152,6 +152,9 @@
     .close{
         display: none;
     }
+    .return{
+      top: 50%;
+    }
 
   </style>
 </HEAD>
@@ -176,7 +179,7 @@
     const alertHeading = document.querySelector('.alert__heading') 
     pinkboard.onclick = () => {
         alert.classList.remove('close')
-        alert.style.top = '50%';
+        alert.classList.add('return')
     }
     const btnSuccess  = document.querySelector('.btn--success')
     const btnNo  = document.querySelector('.btn--no')
