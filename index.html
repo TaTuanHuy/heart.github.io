@@ -75,9 +75,8 @@
       0% {
         transform: scale(1);
       }
-
-      30% {
-        transform: scale(.8);
+      30%{
+        transform: scale(.8)
       }
 
       60% {
@@ -188,6 +187,15 @@
         btnNo.classList.add('close')
         setTimeout(() =>{
             alert.classList.add('close')
+            alert.innerHTML = `
+            <div class="container">
+              <h1 class="new__heading"></h1>
+              <h2 class="alert__heading">Có iu mình kh nè:3</h2>
+
+              <button class="btn btn--success"> Có nè!</button>
+              <button class="btn btn--no">Không! </button>
+            </div>
+            `
         }
         ,5000)
         alert.classList.remove('fix')
