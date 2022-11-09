@@ -184,7 +184,6 @@
     const btnNo  = document.querySelector('.btn--no')
     btnSuccess.onclick = () => {
         alertHeading.innerHTML = "Chúc mừng bạn đã có được mình <3"
-        alert.classList.add('return')
         btnSuccess.classList.add('close')
         btnNo.classList.add('close')
         setTimeout(() =>{
@@ -200,6 +199,7 @@
             `
         }
         ,5000)
+        alert.classList.add('return')
         alert.classList.remove('fix')
     }
     const run = () =>{
